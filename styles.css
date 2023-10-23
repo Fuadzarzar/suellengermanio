@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif, arial, helvetica;
+    height: 1000px;
+    background-color: #F0ECEA;
+
+}
+
+header {
+    background-color: #18181830;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    align-items: center;
+
+}
+
+nav li {
+    list-style: none;
+    position: relative;
+}
+
+nav a {
+    color: #EDCAB7;
+    text-decoration: none;
+    padding: 0 16px;
+    display: inline-block;
+}
+
+nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #EDCAB7;
+    border-radius: 0 0 4px 4px;
+    z-index: 1;
+}
+
+nav .submenu li {
+    width: 100%;
+    transition: 0.2s;
+}
+
+nav .submenu li:hover {
+    border-radius: 0 0 4px 4px;
+
+   background-color: #f7e1d5;
+}
+
+nav .submenu a {
+    color: black;
+    padding: 8px 16px;
+    display: block;
+}
+
+nav li:hover .submenu {
+    display: block;
+}
+
+/* ... (código CSS anterior) ... */
+
+.contato-suellen {
+    display: grid;
+    z-index: 998;
+    position: fixed;
+    bottom: 80px;
+    left: 50px;
+    width: 350px;
+    grid-template-columns: 1fr 2fr;
+
+    background-color: #3e4849;
+}
+
+.suellen-letra {
+    font-family: 'Libre Baskerville', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    color: white;
+    background-color: #B59079;
+}
+
+.suellen-conteudo-nome {
+    display: block;
+    padding: 1.2rem;
+    text-align: left;
+}
+
+.suellen-nome {
+    display: block;
+}
+
+.featured-main-section {
+    background-image: url('./dueBackgroundHome.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.featured-image {
+    width: 1110px;
+    height: 533px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.featured-image-content {
+    position: absolute;
+    width: 950px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.featured-image-content-title {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 54px;
+    margin-bottom: 1rem;
+    color: white; /* Defina a cor que desejar para o texto */
+}
+
+.featured-image-content-subtitle {
+    font-weight: 400;
+    color: rgb(211, 211, 211); /* Defina a cor que desejar para o texto */
+}
+
+.due-suellen-logo  {
+   position: absolute;
+   bottom: 50px;
+}
+
+.due-suellen-logo svg {
+    width: 300px;
+}
+
+.boulevard-section {
+    background-color: #ede7e4;
+    width: 100%;
+    height: 940px;
+    padding: 120px 0;
+    display: grid;
+    position: relative;
+}
+
+.boulevard-image-div {
+    text-align: right;
+    justify-self: right;
+    margin-right: 200px;
+    width: 1100px;
+    height: 550px;
+    background-image: url('./fachada-boulevard.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.boulevard-lancamento {
+    width: 180px;
+    height: 55px;
+    background-color: #0B2C3C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.gradient-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 684px;
+    height: 100%;
+    background: linear-gradient(to right, #ede7e4, transparent);
+}
+
+.text-div {
+    position: absolute;
+    top: 50%;
+    left: -400px;
+    transform: translateY(-50%);
+}
+
+.text-div h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.beach-content-heading-title{
+    font-size: 18px;
+}
+
+.beach-content-heading-subtitle {
+    font-size: 16px;
+    position: relative;
+}
+
+.beach-content-heading-subtitle::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #b59079;
+    width: 60px;
+    height: 2px;
+}
+
+.text-div .description {
+    margin-top: 20px;
+}
+
+.text-div .description p {
+    line-height: 25px;
+    margin-bottom: 20px;
+    max-width: 450px;
+    font-size: 14px;
+}
+
+.text-div a {
+    display: inline-block;
+    background: #b59079;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ... (código CSS anterior) ... */
+
+#ultimos-lancamentos {
+    margin-top: 4rem;
+    background-color: #F0ECEA;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-wrapper {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.content-wrapper-title {
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 35px;
+}
+
+.line {
+    width: 135px;
+    height: 6px;
+    margin-bottom: 8rem;
+    background-color: #B59079;
+}
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 0 4rem;
+    height: 500px;
+    background-color: #D9D9D9;
+}
+
+.card {
+    justify-self: center;
+    position: relative;
+    top: -40px;
+    background-color: #EDE7E4;
+    max-width: 380px;
+    height: 600px;
+    overflow: hidden; /* Caso algum conteúdo ultrapasse as dimensões do card, ele não será exibido */
+    border: 1px solid #E0E0E0; /* Adicionei uma borda leve para ajudar na visualização. Ajuste como preferir. */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional para dar profundidade */
+}
+
+.card::before {
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #0B2C3C;
+    position: absolute;
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover; /* Faz a imagem cobrir o espaço disponível sem distorcer */
+}
+
+.card-title {
+    text-align: left;
+    padding: 0 24px;
+    margin-top: 1rem;
+}
+
+.h2-title {
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.card-title p {
+    font-size: 16px;
+    color: grey; /* Dei uma cor mais suave ao subtítulo para contrastar com o título. Ajuste como preferir. */
+}
+
+.card-details {
+    padding: 32px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Espaço entre os detalhes */
+}
+
+.detail p {
+    font-size: 14px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; /* Espaço entre o ícone e o texto ao lado */
+    background-color: grey; /* Representação visual do ícone. Ajuste para mostrar o ícone desejado */
+    display: inline-block;
+}
+
+/* Destaque */
+
+.destaque-empreendimento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(to right, #090818dd, rgba(0, 0, 0, 0.844)), url('./principal-boule.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content-wrapper-destaque-empreendimento {
+    max-width: 600px;
+    background-color: #0B2C3C;
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 52px; /* Espaço opcional para dar um pouco de respiro ao conteúdo */
+    align-self: center;
+    justify-self: center;
+}
+
+.title-wrapper-destaque-empreendimento {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-wrapper-destaque-empreendimento h1 {
+    font-size: 38px;
+    font-weight: 400;
+    text-align: left;
+    color: #F0ECEA;
+    margin-bottom: 20px; /* Espaço entre o título e o subtítulo */
+}
+
+.title-wrapper-destaque-empreendimento h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #F0ECEA;
+}
+
+.content-wrapper-description {
+}
+
+.content-wrapper-description p {
+    color: #F0ECEA;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+
+}
+
+.image-wrapper {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    max-width: 780px;
+    height: 448px;
+    object-fit: cover;
+}
+
+/* ... (código CSS anterior) ... */
+
+.experiencia {
+    background-color: #F0ECEA;
+    width: 100%;
+    height: 1000px;
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-experiencia-content {
+    margin-bottom: 4rem;
+}
+
+.titulo-experiencia {
+    max-width: 1200px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 110px;
+    color: black; /* Defina a cor que desejar para o texto */
+}
+
+.grid-experiencia {
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 8rem; /* Espaçamento entre as colunas, caso necessário */
+}
+
+.imagem-experiencia {
+    align-self: center;
+    justify-self: self-end;
+    width: 750px;
+    background-image: url('./imagem.png'); /* Coloque o caminho correto da sua imagem aqui */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 520px /* Defina a altura desejada para a imagem, caso necessário */
+}
+
+.imagem-experiencia:last-of-type {
+    justify-self: self-start;
+
+}
+
+.imagem-experiencia-banner {
+    background-color: #A77868;
+    display: block;
+    position: absolute;
+    bottom: -105px;
+    padding: 24px;
+    width: 330px;
+    color: white; /* Defina a cor que desejar para o texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-right {
+    right: 0;
+}
+.banner-left {
+    left: 0;
+}
+
+.coluna-direita {
+    /* Estilos para a segunda coluna, caso necessário */
+    max-width: 650px;
+    align-self: center;
+    justify-self: self-start;
+}
+
+.coluna-direita:first-of-type {
+    justify-self: self-end; 
+}
+
+/* ... (código CSS anterior) ... */
+
+.beach-content-texts {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: start;
+}
+
+.beach-title {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 24px;
+    color: black; /* Adapte a cor conforme a necessidade */
+}
+
+.beach-info {
+    font-size: 24px; /* Adapte o tamanho da fonte conforme a necessidade */
+    color: black; /* Adapte a cor conforme a necessidade */
+}
+
+.beach-address-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.beach-address-line {
+    width: 40px;
+    height: 2px;
+    background-color: #B59079;
+}
+
+.beach-location {
+    font-size: 18px;
+}
+
+.beach-address {
+    font-size: 16px;
+}
+
+.beach-descripion {
+    margin-top: 2rem;
+    font-size: 16px;
+}
+
+
+.detalhes .item-detalhe {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.botao-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #EDE7E4;
+    border: 1px solid #D8D8D8;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-info:hover {
+    background-color: #D8D8D8;
+}
+
+/* ... (código CSS anterior) ... */
+
+.nature-residence {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nature-bg {
+    background-image: linear-gradient(to bottom, transparent, #0B2C3C), url('./nature.png'); /* Coloque o caminho correto da sua imagem aqui */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.nature-bg span {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    font-size: 38px;
+    color: white; /* Defina a cor que desejar para o texto */
+}
+
+/* ... (código CSS anterior) ... */
+
+.detalhes-nature {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: 100vh;
+}
+
+.descricao-nature {
+    background-color: #0B2C3C;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem;
+    color: white; /* Cor base para o texto, pode ser ajustada conforme necessário */
+}
+
+.descricao-nature p {
+    margin-top: 2rem; /* Ajuste conforme necessário para posicionar o parágrafo no topo */
+    text-align: center;
+    max-width: 80%; /* Ajuste para que o parágrafo não seja muito largo */
+}
+
+.caracteristicas h2 {
+    margin-top: 2rem; /* Espaçamento entre o parágrafo e o título "Caracteristicas" */
+    font-size: 24px;
+}
+
+.caracteristicas h3 {
+    margin-top: 1rem; /* Espaçamento entre o título "Caracteristicas" e o subtítulo */
+    font-size: 18px;
+}
+
+.imagem-nature {
+    background-color: #F3F0EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-nature img {
+    width: 900px;
+    height: 600px;
+}
+
+
+
+
