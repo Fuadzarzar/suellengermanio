@@ -10,7 +10,7 @@
     <title>Suellen Germanio - Corretora | Conheça os mais novos lançamentos da Due na região litorânea</title>
   </head>
   <body>
-<!--     <header>
+    <header>
       <nav>
         <ul>
           <li>
@@ -31,9 +31,16 @@
           <li><a href="#">Contato</a></li>
         </ul>
       </nav>
-    </header> -->
+    </header>
 
     <!-- ... (código anterior do header) ... -->
+
+    <div class="contato-suellen">
+      <div class="suellen-letra">S</div>
+      <div class="suellen-conteudo-nome">
+        <span class="suellen-nome">Suellen Germanio</span>
+      <span class="suellen-profissao">CORRETORA</span></div>
+    </div>
 
     <section class="featured-main-section">
       
@@ -136,8 +143,265 @@
           <path d="M584.096 77.217C586.195 84.6219 581.721 92.4227 574.197 94.4027C566.752 96.5014 559.11 92.0268 557.038 84.4239C556.089 80.8128 556.609 76.9729 558.485 73.7447C560.361 70.5164 563.439 68.1627 567.046 67.1986C574.434 65.0999 582.156 69.6933 584.096 77.217ZM560.258 83.5923C561.842 89.5717 567.426 95.9074 574.118 94.1255C580.889 92.3831 582.592 84.0279 581.047 78.009C579.424 71.9108 573.88 65.6147 567.069 67.5154C560.337 69.2577 558.635 77.5338 560.258 83.5923Z" fill="white"/>
           <line x1="207.5" x2="207.5" y2="95" stroke="#F5F5F5"/>
           </svg>
+          
       </div>
+<!--       <video id="video-desktop" muted="" loop="" autoplay="" playsinline="" preload="auto" class="d-block"> <source src="https://dueinc.com.br/wp-content/uploads/2023/08/Lancamento-Boulevard-Desktop-mp4-1.mp4" type="video/mp4"></video> -->
+      <div class="featured-image">
+        <div class="featured-image-content">
+          <p class="featured-image-content-title">Conheça os mais novos lançamentos da Due na região litorânea</p>
+          <span class="featured-image-content-subtitle">EMPREENDIMENTOS EXCLUSIVOS COM LOCALIZAÇÃO PRIVILEGIADA À BEIRA-MAR, 
+            PROPORCIONANDO TRANQUILIDADE E QUALIDADE  <!-- PROPORCIONANDO TRANQUILIDADE E QUALIDADE --></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="boulevard-section">
+      <div class="boulevard-image-div">
+        <div class="boulevard-lancamento">Lançamento</div>
+          <div class="gradient-div"></div>
+          <div class="text-div">
+              <h1>Boulevard</h1>
+              <div class="beach-content-heading">
+                  <p class="beach-content-heading-title">PRAIA DOS CARNEIROS</p>
+                  <span class="beach-content-heading-subtitle">TAMANDARÉ - PE</span>
+              </div>
+              <div class="description">
+                  <p>Apresento a vocês o incrível Boulevard Praia dos Carneiros, um empreendimento à beira-mar projetado para atender a todos os estilos de vida. Seja você um investidor em busca de oportunidades promissoras ou alguém em busca do local perfeito para chamar de lar, este lugar oferece um leque de novas possibilidades e experiências para desfrutar o melhor desta deslumbrante região. Com uma localização privilegiada à beira da praia, o Boulevard Praia dos Carneiros é o cenário ideal para viver momentos inesquecíveis.</p>
+                  <a href="#">Saiba mais</a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- ... (código anterior) ... -->
+
+<!-- <section id="ultimos-lancamentos">
+  <div class="content-wrapper">
+      <h2 class="content-wrapper-title">Últimos Lançamentos</h2>
+      <div class="line"></div>
+      <div class="showcase">
+
+        <div class="card">
+          <img src="./principal-boule.jpg" alt="Imagem do Empreendimento">
+          <div class="card-title">
+              <h2 class="h2-title">Costa azul | Villa Carneiros</h2>
+              <p>Praia de Tamandaré - PE</p>
+          </div>
+          <div class="card-details">
+              <div class="detail">
+                  <span class="icon"></span>
+                  <p>Studio 2 e 3 quartos</p>
+              </div>
+              <div class="detail">
+                  <span class="icon"></span>
+                  <p>Apartamento de 24m² até 87m²</p>
+              </div>
+              <div class="detail">
+                  <span class="icon"></span>
+                  <p>Serviço de Resort</p>
+              </div>
+              <div class="detail">
+                  <span class="icon"></span>
+                  <p>Academia</p>
+              </div>
+          </div>
+      </div>
+        <div class="card">
+          <img src="./principal-boule.jpg" alt="Imagem do Empreendimento">
+          <div class="card-title">
+              <h2 class="h2-title">Costa azul | Villa Carneiros</h2>
+              <p>Praia de Tamandaré - PE</p>
+          </div>
+          <div class="card-details">
+              <div class="detail">
+                  <span class="icon"></span>
+                  <p>Studio 2 e 3 quartos</p>
+              </div>
+              <div class="detail">
+                  <span class="icon"></span>
+                  <p>Apartamento de 24m² até 87m²</p>
+              </div>
+              <div class="detail">
+                  <span class="icon"></span>
+                  <p>Serviço de Resort</p>
+              </div>
+              <div class="detail">
+                  <span class="icon"></span>
+                  <p>Academia</p>
+              </div>
+          </div>
+      </div>
+        <div class="card">
+          <img src="./principal-boule.jpg" alt="Imagem do Empreendimento">
+          <div class="card-title">
+              <h2 class="h2-title">Costa azul | Villa Carneiros</h2>
+              <p>Praia de Tamandaré - PE</p>
+          </div>
+          <div class="card-details">
+              <div class="detail">
+                  <span class="icon"></span>
+                  <p>Studio 2 e 3 quartos</p>
+              </div>
+              <div class="detail">
+                  <span class="icon"></span>
+                  <p>Apartamento de 24m² até 87m²</p>
+              </div>
+              <div class="detail">
+                  <span class="icon"></span>
+                  <p>Serviço de Resort</p>
+              </div>
+              <div class="detail">
+                  <span class="icon"></span>
+                  <p>Academia</p>
+              </div>
+          </div>
+      </div>
+      </div>
+  </div>
+</section> -->
+
+<section class="experiencia">
+<!--   <div class="titulo-experiencia-content">
+      <h2 class="titulo-experiencia">Viva a experiência das maravilhas naturais</h2>
+  </div> -->
+  
+  <div class="grid-experiencia">
+
+      <div class="imagem-experiencia">
+        <div class="boulevard-lancamento">Lançamento</div>
+          <span class="imagem-experiencia-banner banner-right">A trajetória de vida que você trilhou o conduz diretamente ao Beach Class Wave. Este empreendimento, que equilibra serenidade e entretenimento.</span>
+      </div>
+
+      <div class="coluna-direita">
+          <!-- Conteúdo para a segunda coluna, caso necessário -->
+          <div class="beach-content-texts">
+            <h1 class="beach-title">Beach Class Wave</h1>
+            <div class="beach-info">
+                <p class="beach-location">Praia dos Carneiros</p>
+                <div class="beach-address-content">
+                  <div class="beach-address-line"></div>
+                  <span class="beach-address">Tamandaré - PE</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="beach-descripion">
+            <p>O Beach Class Wave não é apenas um empreendimento, mas sim uma experiência de vida excepcional. Com sua localização privilegiada à beira da deslumbrante Praia de Carneiros, ele oferece a combinação perfeita entre tranquilidade e diversão. Imagine acordar todas as manhãs com o som suave das ondas quebrando na praia e a brisa fresca do mar. Este é o tipo de vida que o Wave proporciona.
+              Este empreendimento, que harmoniza serenidade e entretenimento, promete proporcionar momentos verdadeiramente únicos. </p>
+        </div>
+        
+        <div class="detalhes">
+            <div class="item-detalhe">
+                <!-- Adicione o ícone que desejar aqui, por exemplo, usando um <i> ou <img> -->
+                <span>Descrição do ícone</span> 
+            </div>
+            <!-- Repita a div .item-detalhe para outros ícones e textos, se necessário -->
+        </div>
+        
+        <div class="botao-info">
+            <!-- Adicione o ícone que desejar aqui, por exemplo, usando um <i> ou <img> -->
+            <span>MAIS INFORMAÇÕES</span>
+        </div>
+        
+      </div>
+  </div>
 </section>
+
+<section class="experiencia">
+  <div class="grid-experiencia">
+
+      
+    <div class="coluna-direita">
+      <!-- Conteúdo para a segunda coluna, caso necessário -->
+      <div class="beach-content-texts">
+        <h1 class="beach-title">Beach Class Wave</h1>
+        <div class="beach-info">
+            <p class="beach-location">Praia dos Carneiros</p>
+            <div class="beach-address-content">
+              <div class="beach-address-line"></div>
+              <span class="beach-address">Tamandaré - PE</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="beach-descripion">
+        <p>O Beach Class Wave não é apenas um empreendimento, mas sim uma experiência de vida excepcional. Com sua localização privilegiada à beira da deslumbrante Praia de Carneiros, ele oferece a combinação perfeita entre tranquilidade e diversão. Imagine acordar todas as manhãs com o som suave das ondas quebrando na praia e a brisa fresca do mar. Este é o tipo de vida que o Wave proporciona.
+          Este empreendimento, que harmoniza serenidade e entretenimento, promete proporcionar momentos verdadeiramente únicos. </p>
+    </div>
+    
+    <div class="detalhes">
+        <div class="item-detalhe">
+            <!-- Adicione o ícone que desejar aqui, por exemplo, usando um <i> ou <img> -->
+            <span>Descrição do ícone</span> 
+        </div>
+        <!-- Repita a div .item-detalhe para outros ícones e textos, se necessário -->
+    </div>
+    
+    <div class="botao-info">
+        <!-- Adicione o ícone que desejar aqui, por exemplo, usando um <i> ou <img> -->
+        <span>MAIS INFORMAÇÕES</span>
+    </div>
+    
+  </div>
+
+      <div class="imagem-experiencia">
+        <div class="boulevard-lancamento">Lançamento</div>
+        <span class="imagem-experiencia-banner banner-left">A trajetória de vida que você trilhou o conduz diretamente ao Beach Class Wave. Este empreendimento, que equilibra serenidade e entretenimento.</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="destaque-empreendimento">
+  <!-- Primeira div com título e subtítulo -->
+  <div class="content-wrapper-destaque-empreendimento">
+      <div class="title-wrapper-destaque-empreendimento">
+          <h1>Cais Eco Residencia</h1>
+          <h3>Praia de Muro Alto | Ipojuca - PE</h3>
+      </div>
+
+      <div class="content-wrapper-description">
+        <p>
+          Cais Eco Residência se destaca pelo seu design inovador e seu compromisso com o desenvolvimento sustentável. Desde sua concepção até a execução, ele redefine os padrões do mercado imobiliário, oferecendo uma experiência de vida única.
+Algumas das características notáveis deste residencial incluem um Beach Club à beira-mar para relaxamento e cenários deslumbrantes, um Empório Gourmet para explorar sabores excepcionais, Lounges Gourmet para encontros especiais, e muito mais.
+        </p>
+      </div>
+
+      <div>
+        <a href="#">Mais detalhes</a>
+      </div>
+  </div>
+
+  <!-- Segunda div com a imagem -->
+  <div class="image-wrapper">
+      <img src="./imagem.png" alt="Imagem do Empreendimento Cais Eco Residencia">
+  </div>
+</section>
+
+<!-- ... (código anterior) ... -->
+
+
+<section class="nature-residence">
+  <div class="nature-bg">
+      <span>Naturê Eco Residência</span>
+  </div>
+</section>
+
+<section class="detalhes-nature">
+  <div class="descricao-nature">
+      <p>Naturê Residencial é o mais novo empreendimento, mais moderno</p>
+      <div class="caracteristicas">
+          <h2>Caracteristicas</h2>
+          <h3>esta é a descrição do nature</h3>
+      </div>
+  </div>
+
+  <div class="imagem-nature">
+      <img src="./nature01.png" alt="Imagem do Naturê Residencial"> <!-- Coloque o caminho correto da sua imagem aqui -->
+  </div>
+</section>
+
+
 
     <script src="scripts.js"></script>
   </body>
