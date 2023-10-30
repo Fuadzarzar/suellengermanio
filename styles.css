@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 html, body {
@@ -13,6 +12,7 @@ html, body {
 body {
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
+    overflow-x: hidden;
     overflow-y: scroll; 
 }
 
@@ -315,14 +315,39 @@ font-size: 54px;
     font-size: 14px;
 }
 
+.botoes {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .description-button {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #b59079;
     width: 200px;
     height: 50px;
     line-height: 50px;
     text-align: center;
     color: white;
+    flex: 1 0 200px;
+    text-decoration: none;
+}
+
+.mais-detalhes {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    background: #e5e5e5;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #0B2C3C;
+    flex: 1 0 200px;
     text-decoration: none;
 }
 
@@ -369,61 +394,9 @@ font-size: 54px;
     background-color: #D9D9D9;
 }
 
-.card {
-    justify-self: center;
-    position: relative;
-    top: -40px;
-    background-color: #EDE7E4;
-    max-width: 380px;
-    height: 600px;
-    overflow: hidden; /* Caso algum conteúdo ultrapasse as dimensões do card, ele não será exibido */
-    border: 1px solid #E0E0E0; /* Adicionei uma borda leve para ajudar na visualização. Ajuste como preferir. */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional para dar profundidade */
-}
-
-.card::before {
-    content: "";
-    bottom: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #0B2C3C;
-    position: absolute;
-}
-
-.card img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover; /* Faz a imagem cobrir o espaço disponível sem distorcer */
-}
-
-.card-title {
-    text-align: left;
-    padding: 0 24px;
-    margin-top: 1rem;
-}
-
 .h2-title {
     font-size: 20px;
     line-height: 34px;
-}
-
-.card-title p {
-    font-size: 16px;
-    color: grey; /* Dei uma cor mais suave ao subtítulo para contrastar com o título. Ajuste como preferir. */
-}
-
-.card-details {
-    padding: 32px;
-}
-
-.detail {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px; /* Espaço entre os detalhes */
-}
-
-.detail p {
-    font-size: 14px;
 }
 
 .icon {
@@ -616,6 +589,7 @@ padding: 72px; */
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow-y: hidden;
     height: 520px /* Defina a altura desejada para a imagem, caso necessário */
 }
 
@@ -630,9 +604,8 @@ padding: 72px; */
 }
 
 .imagem-experiencia-banner {
-    display: block;
     position: absolute;
-    bottom: -105px;
+    bottom: 0;
     padding: 24px;
     width: 330px;
     color: white; /* Defina a cor que desejar para o texto */
@@ -643,12 +616,12 @@ padding: 72px; */
 }
 
 .banner-right {
-    background-color: #0B2C3C;
+    background-color: #0b2c3ce8;
 
     right: 0;
 }
 .banner-left {
-    background-color: #829843;
+    background-color: #819843e3;
     left: 0;
 }
 
@@ -1072,7 +1045,6 @@ margin-bottom: 2rem;
     .imagem-experiencia-banner {
         padding: 16px;
         font-size: 12px;
-        bottom: -40px;
     }
 
     .beach-title {
