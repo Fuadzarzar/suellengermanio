@@ -1,0 +1,50 @@
+      <div class="boulevard-image-div">
+        <div class="boulevard-lancamento">Lançamento</div>
+          <div class="gradient-div"></div>
+          <div class="text-div">
+              <h1>Boulevard</h1>
+              <div class="beach-content-heading">
+                  <p class="beach-content-heading-title">PRAIA DOS CARNEIROS</p>
+                  <span class="beach-content-heading-subtitle">TAMANDARÉ - PE</span>
+              </div>
+              <div class="description">
+                  <p>Apresento a vocês o incrível <strong> Boulevard Praia dos Carneiros</strong>, um empreendimento da Due à beira-mar projetado para atender a todos os estilos de vida. Seja você um investidor em busca de oportunidades promissoras ou alguém em busca do local perfeito para chamar de lar, este lugar oferece um leque de novas possibilidades e experiências para desfrutar o melhor desta deslumbrante região. Com uma localização privilegiada, o Boulevard Praia dos Carneiros é o cenário ideal para viver momentos inesquecíveis.</p>
+                  <a class="description-button" href="#">Saiba mais</a>
+              </div>
+          </div>
+      </div>
+
+
+
+
+      .boulevard-image-div {
+    width: 900px;
+    height: 550px;
+    background-color: red;
+    background-image: url('./fachada-boulevard.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.gradient-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 684px;
+    height: 100%;
+    background: linear-gradient(to right, #ede7e4, transparent);
+}
+
+.text-div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-div h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 64px;
+    font-weight: 400;
+}

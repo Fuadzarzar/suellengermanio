@@ -10,6 +10,16 @@ html, body {
 
 }
 
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
 header {
     background-color: #18181830;
     width: 100%;
@@ -21,7 +31,7 @@ header {
     z-index: 999;
 }
 
-nav ul {
+ nav ul {
     display: flex;
     justify-content: space-between;
     gap: 6rem;
@@ -29,48 +39,77 @@ nav ul {
 
 }
 
-nav li {
+li {
     list-style: none;
     position: relative;
 }
 
 nav a {
-    color: #EDCAB7;
     text-decoration: none;
-    padding: 0 16px;
+    padding: 8px 16px;
     display: inline-block;
 }
 
-nav .submenu {
+#logo-suellen img {
+    width: 180px;
+}
+
+#logo-content {
+    display: block;
+}
+
+.menu-link {
+    color: #EDCAB7;
+    transition: 0.2s;
+
+}
+
+.menu-link:hover {
+    transition: 0.2s;
+
+    color: #D9D9D9;
+
+}
+
+.close-btn {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.submenu-categ {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #EDCAB7;
+    background-color: white;
     border-radius: 0 0 4px 4px;
     z-index: 1;
 }
 
-nav .submenu li {
+.submenu-categ a {
+    color: #0B2C3C;
+}
+
+.submenu:hover .submenu-categ {
+    display: block;
+}
+
+.submenu li {
+    
     width: 100%;
     transition: 0.2s;
 }
 
-nav .submenu li:hover {
+.submenu li:hover {
     border-radius: 0 0 4px 4px;
-
    background-color: #f7e1d5;
 }
 
-nav .submenu a {
-    color: black;
-    padding: 8px 16px;
-    display: block;
-}
 
-nav li:hover .submenu {
-    display: block;
-}
+
 
 /* ... (código CSS anterior) ... */
 
@@ -78,10 +117,9 @@ nav li:hover .submenu {
     display: grid;
     z-index: 998;
     position: fixed;
-    bottom: 80px;
-    left: 50px;
-    width: 350px;
-    grid-template-columns: 1fr 2fr;
+    bottom: 0;
+    width: 100vw;
+    grid-template-columns: 1fr 3fr;
 
     background-color: #3e4849;
 }
@@ -91,18 +129,23 @@ nav li:hover .submenu {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 64px;
+    font-size: 24px;
     color: white;
     background-color: #B59079;
 }
 
 .suellen-conteudo-nome {
-    display: block;
-    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: .25rem;
+    padding: 0.75rem;
     text-align: left;
+    color: rgb(229, 229, 229);
+
 }
 
 .suellen-nome {
+    text-align: center;
     display: block;
 }
 
@@ -113,8 +156,14 @@ nav li:hover .submenu {
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+}
+
+.due-suellen-logo {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 50px;
 }
 
 .featured-image {
@@ -137,6 +186,7 @@ nav li:hover .submenu {
     font-family: 'Libre Baskerville', serif;
     font-weight: 400;
     font-size: 54px;
+    margin-top: 8rem;
     margin-bottom: 1rem;
     color: white; /* Defina a cor que desejar para o texto */
 }
@@ -146,29 +196,74 @@ nav li:hover .submenu {
     color: rgb(211, 211, 211); /* Defina a cor que desejar para o texto */
 }
 
+.texto-efeito-inicio {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem;
+    
+}
+.texto-efeito-inicio p {
+    font-family: 'Libre Baskerville', serif;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-top: 3rem;
+    position: relative;
+}
+
+.texto-efeito-inicio p::before {
+    content: "";
+    width: 150px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    outline: solid 1px rgb(200, 200, 200);
+    margin: 0 auto;
+}
+
 .due-suellen-logo svg {
     width: 300px;
 }
 
 .boulevard-section {
-    background-color: #ede7e4;
-    width: 100%;
-    height: 940px;
-    padding: 120px 0;
     display: grid;
-    position: relative;
+    background-color: #fff;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    margin-bottom: 4rem;
 }
 
-.boulevard-image-div {
-    text-align: right;
-    justify-self: right;
-    margin-right: 200px;
-    width: 1100px;
-    height: 550px;
-    background-image: url('./fachada-boulevard.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.boulevard-imagem {
+    width: 100%;
+
+}
+
+
+.boulevard-imagem-dois-texto {
+    padding: 0 4rem;
+}
+.boulevard-imagem-dois-texto h1 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+
+.boulevard-imagem-dois {
+    width: 100%;
+}
+
+.boulevard-imagem-dois-texto h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    color: #1A80C1;
+
+font-size: 54px;
 }
 
 .boulevard-lancamento {
@@ -186,28 +281,6 @@ nav li:hover .submenu {
     font-size: 18px;
     font-weight: 400;
     color: white;
-}
-
-.gradient-div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 684px;
-    height: 100%;
-    background: linear-gradient(to right, #ede7e4, transparent);
-}
-
-.text-div {
-    position: absolute;
-    top: 50%;
-    left: -400px;
-    transform: translateY(-50%);
-}
-
-.text-div h1 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 64px;
-    font-weight: 400;
 }
 
 .beach-content-heading-title{
@@ -241,7 +314,7 @@ nav li:hover .submenu {
     font-size: 14px;
 }
 
-.text-div a {
+.description-button {
     display: inline-block;
     background: #b59079;
     width: 200px;
@@ -365,6 +438,7 @@ nav li:hover .submenu {
 .destaque-empreendimento {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
     width: 100%;
     height: 800px;
     background: linear-gradient(to right, #090818dd, rgba(0, 0, 0, 0.844)), url('./principal-boule.jpg');
@@ -402,13 +476,14 @@ nav li:hover .submenu {
     font-size: 18px;
     font-weight: 400;
     color: #F0ECEA;
+    margin-bottom: 1rem;
 }
 
 .content-wrapper-description p {
     color: #F0ECEA;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 26px;
 
 }
 
@@ -427,10 +502,84 @@ nav li:hover .submenu {
 
 /* ... (código CSS anterior) ... */
 
-.experiencia {
+
+.nossos-servicos {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+/* display: flex;
+flex-direction: column;
+gap: 2rem;
+padding: 72px; */
+}
+
+#caisecoresidence-art {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.nature-content {
+    position: relative;
+    background-color: #A77868;
+    padding: 4rem;
+
+}
+
+.nossos-servicos img {
+    max-width: 100%;
+    width: 100%; 
+    height: auto;
+}
+
+.servico-card-titulo-efeito {
+    text-align: center;
+    margin: 0 auto;
+    }
+.servico-card-titulo-efeito h1 {
+    display: block;
+
+    }
+
+
+.servico-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 24px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.servico-icone {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+.servico-titulo {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.servico-descricao {
+    font-size: 16px;
+}
+
+.servico-card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.costa-empreendimentos-section {
     background-color: #F0ECEA;
     width: 100%;
-    height: 1000px;
+    height: 100vh;
     padding-top: 8rem;
     display: flex;
     flex-direction: column;
@@ -450,32 +599,36 @@ nav li:hover .submenu {
     color: black; /* Defina a cor que desejar para o texto */
 }
 
-.grid-experiencia {
+.costa-empreendimentos {
     padding: 0 4rem;
     display: grid;
+    
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    gap: 8rem; /* Espaçamento entre as colunas, caso necessário */
+    gap: 4rem; /* Espaçamento entre as colunas, caso necessário */
 }
 
-.imagem-experiencia {
+.bg-imagem-costa {
     align-self: center;
     justify-self: self-end;
     width: 750px;
-    background-image: url('./imagem.png'); /* Coloque o caminho correto da sua imagem aqui */
     background-size: cover;
     background-position: center;
     position: relative;
     height: 520px /* Defina a altura desejada para a imagem, caso necessário */
 }
 
-.imagem-experiencia:last-of-type {
-    justify-self: self-start;
+
+.imagem-costaAzul {
+    background-image: url('./CostaAzul.jpg'); /* Coloque o caminho correto da sua imagem aqui */
+}
+
+.imagem-costadoMar {
+    background-image: url('./CostaDoMar.jpg'); /* Coloque o caminho correto da sua imagem aqui */
 
 }
 
 .imagem-experiencia-banner {
-    background-color: #A77868;
     display: block;
     position: absolute;
     bottom: -105px;
@@ -489,9 +642,12 @@ nav li:hover .submenu {
 }
 
 .banner-right {
+    background-color: #0B2C3C;
+
     right: 0;
 }
 .banner-left {
+    background-color: #829843;
     left: 0;
 }
 
@@ -519,13 +675,15 @@ nav li:hover .submenu {
     font-family: 'Libre Baskerville', serif;
     font-weight: 400;
     font-size: 64px;
-    line-height: 24px;
-    color: black; /* Adapte a cor conforme a necessidade */
+    line-height: auto;
+    color: #0B2C3C;
+
 }
 
 .beach-info {
     font-size: 24px; /* Adapte o tamanho da fonte conforme a necessidade */
-    color: black; /* Adapte a cor conforme a necessidade */
+    color: #0B2C3C;
+
 }
 
 .beach-address-content {
@@ -554,26 +712,27 @@ nav li:hover .submenu {
     font-size: 16px;
 }
 
-
-.detalhes .item-detalhe {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+.beach-descripion p {
+    color: #0B2C3C;
+margin-bottom: 2rem;
 }
 
-.botao-info {
+.detalhes-do-empreendimento {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-    align-items: center;
-    padding: 8px 16px;
-    background-color: #EDE7E4;
-    border: 1px solid #D8D8D8;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    width: 100%;
+    padding: 1rem 0;
 }
 
-.botao-info:hover {
-    background-color: #D8D8D8;
+.card-do-empreendimento {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.texto-dos-detalhes {
+    font-size: 14px;
 }
 
 /* ... (código CSS anterior) ... */
@@ -650,5 +809,322 @@ nav li:hover .submenu {
 }
 
 
+@media only screen and (min-width: 1025px) {
 
+    .mobile-logo-active {
+        display: none;
+    }
 
+    .featured-image-content-title {
+
+        margin-top: 4rem;
+    }
+
+    #caisecoresidence-art {
+        height: 250px;
+    
+    }
+
+    .nossos-servicos {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%; 
+}
+
+    .nossos-servicos img {
+        height: 100%;
+    }
+
+    /* Estilos para desktops */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .mobile-logo-active {
+        display: none;
+    }
+
+    /* Estilos para tablets */
+}
+
+@media only screen and (max-width: 600px) {
+
+    .mobile-logo-active {
+        display: block;
+    }
+    .mobile-logo-active img {
+        width: 180px;
+   
+    }
+
+    #logo-content {
+        display: none;
+    }
+
+    #logo-suellen {
+    display: hidden;
+    display: none;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .close-btn {
+        display: block;
+        z-index: 999;
+    }
+    
+    .menu-btn {
+        display: initial;
+    }
+
+    .menu-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        color: #B59079;
+    }
+
+    .submenu-categ {
+        background-color: transparent;
+        display: block;
+        position: relative;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: #EDE7E4;
+        color: #0B2C3C;
+        transition: right 0.3s;
+    }
+
+    .menu-link {
+        text-align: left;
+        color: #0B2C3C;
+    }
+    
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .menu-principal {
+        margin-top: 2rem;
+    }
+    
+    .menu li {
+        padding: 15px;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #0B2C3C;
+        font-size: 18px;
+    }
+    
+    .menu a:hover {
+        text-decoration: none;
+        color: #B59079;
+        font-size: 18px;
+    }
+    
+    
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .menu.active {
+        right: 0;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+
+    
+
+/* menu */ 
+
+    .boulevard-lancamento {
+        width: auto;
+        height: auto;
+        right: 30px;
+        padding: .75rem;
+        font-size: 12px;
+    }
+
+    .text-div .description {
+        margin-top: 0;
+        background-color: #ede7e4;
+    }
+
+    .featured-image-content-title {
+        padding: 0 2rem;
+        font-size: 24px;
+    }
+
+    .featured-image-content-subtitle {
+        font-size: 14px;
+    }
+
+    .boulevard-imagem img {
+        width: fit-content;
+    }
+
+    .boulevard-image-div {
+        width: 100vw;
+        position: relative;
+    }
+
+    .gradient-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 684px;
+        height: 100%;
+        background: linear-gradient(to top, #ede7e4, transparent);
+    }
+
+    .text-div {
+        position: absolute;
+        bottom: 40%;
+        left:0;
+        right: 0;
+        text-align: center;
+        transform: translateY(300%);
+    }
+
+    .text-div h1 {
+    font-size: 42px;
+    font-weight: 400;
+    }
+
+    .text-div .description {
+        padding: 0 2rem;
+    }
+    .description p {
+        text-align: justify;
+
+    }
+
+    .beach-content-heading-title{
+        font-size: 16px;
+    }
+
+    .beach-content-heading-subtitle {
+        font-size: 14px;
+        position: relative;
+    }
+
+    .beach-content-heading-subtitle::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #b59079;
+    width: 20px;
+    height: 2px;
+}
+    /* Estilos para dispositivos móveis */
+
+    .costa-empreendimentos-section {
+        height: auto;
+        padding-top: 0;
+
+    }
+
+    .costa-empreendimentos {
+        padding: 0 2rem;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem; /* Espaçamento entre as colunas, caso necessário */
+    }
+
+    .reverse-mobile {
+        margin-top: 4rem;
+        flex-direction: column-reverse;
+
+    }
+
+    .bg-imagem-costa {
+        width: 100vw;
+        height: 300px;
+      
+    }
+
+    .imagem-experiencia-banner {
+        padding: 16px;
+        font-size: 12px;
+        bottom: -40px;
+    }
+
+    .beach-title {
+        margin-top: 4rem;
+        font-size: 36px;
+        line-height: 24px;
+    }
+
+    .nossos-servicos {
+        width: auto;
+        margin: 2rem;
+        height: unset;
+        gap: 0;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        grid-template-columns: 1fr;
+    
+    }
+    
+    #caisecoresidence-art {
+        height: auto;
+    
+    }
+
+    .nature-content {
+        padding: 3rem 2rem;
+    }
+
+    .texto-efeito-inicio {
+  
+    }
+    
+    .texto-efeito-inicio p {
+        line-height: 28px;
+        font-size: 16px;
+    }
+
+    .boulevard-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        padding: 0 0 4rem;
+        margin-bottom: 0;
+    }
+
+    .boulevard-imagem-dois-texto h1 {
+        font-size: 38px;
+        text-align: center;
+        margin-top: 0rem;        
+    }
+
+    .boulevard-imagem-dois-texto p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+}
